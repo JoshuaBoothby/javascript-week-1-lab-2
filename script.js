@@ -21,11 +21,19 @@ function positiveNegativeOrZero(num) {
     return "Positive";
   } else if (num < 0) {
     return "Negative";
-  } else {
+  } else if (num === 0) {
     return "Zero";
+  } else {
+    return "Invalid input. Moving on...";
   }
 }
-alert(positiveNegativeOrZero(prompt("Enter a number and I will tell you if it is positive, negative or zero")));
+alert(
+  positiveNegativeOrZero(
+    prompt(
+      "Enter a number and I will tell you if it is positive, negative or zero"
+    )
+  )
+);
 
 // Voting Eligibility
 
@@ -36,4 +44,8 @@ function votingEligibility(age) {
     return "Not eligible to vote";
   }
 }
-alert(votingEligibility(prompt("Enter your age and I will tell you if you are eligible to vote")));
+alert(
+  votingEligibility(
+    prompt("Enter your age and I will tell you if you are eligible to vote")
+  )
+);
