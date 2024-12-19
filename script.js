@@ -26,3 +26,14 @@ function positiveNegativeOrZero(num) {
   }
 }
 alert(positiveNegativeOrZero(prompt("Enter a number and I will tell you if it is positive, negative or zero")));
+
+// Voting Eligibility
+
+function votingEligibility(age) {
+  if (age >= 18) {
+    return "Eligible to vote";
+  } else {
+    return "Not eligible to vote";
+  }
+}
+alert(votingEligibility(prompt("Enter your age and I will tell you if you are eligible to vote")));
