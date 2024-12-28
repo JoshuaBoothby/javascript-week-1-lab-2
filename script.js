@@ -3,6 +3,9 @@
 // Smallest of Three Numbers
 
 function smallestOfThreeNumbers(num1, num2, num3) {
+  num1 = parseInt(num1);
+  num2 = parseInt(num2);
+  num3 = parseInt(num3);
   let smallest = Math.min(num1, num2, num3);
   return smallest;
 }
@@ -17,6 +20,7 @@ alert(
 // Positive, Negative or Zero
 
 function positiveNegativeOrZero(num) {
+  num = parseInt(num);
   if (num > 0) {
     return "Positive";
   } else if (num < 0) {
@@ -38,6 +42,7 @@ alert(
 // Voting Eligibility
 
 function votingEligibility(age) {
+  age = parseInt(age);
   if (age >= 18) {
     return "Eligible to vote";
   } else {
